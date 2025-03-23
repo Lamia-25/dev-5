@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100  h-200" >
+     <section class="mx-auto  bg-white rounded-lg shadow-lg p-6   max-w-6xl">
+        <header>
+            <nav class="flex justify-between">
+                <div class="flex">
+                  <img class="w-6" src="assets/logo.png" alt="">
+                  <h1 class="text-2xl">Dev<span class="text-2xl font-bold">Board</span></h1>
+                </div>
+                <div class="flex gap-3">
+                    <div class="bg-gray-100 rounded-lg w-14 flex h-8 justify-evenly">
+                      <img class="w-5 m-2" src="assets/checkbox.png" alt="">
+                      <h2 class="text-1xl font-bold mr-1 mt-1">23</h2>
+                    </div>
+                    <div>
+                        <button>
+                            <img id="cat" onclick="makeChange()" class="w-6" src="assets/theme-btn.png" alt=""> 
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <br>
+   <section class="flex">
+    <div class="  bg-white rounded-xl shadow-lg p-6  h-170 mb-4  w-219 ml-14 ">
+        <div class="w-208 h-155  ">
+        <div class="flex">
+          <div class="flex  w-52  m-4 h-17 rounded-xl h-1 bg-gray-100  ">
+              <img  class="w-5 ml-7 h-4 mt-7" src="assets/checkbox.png" alt="">
+              <h3 class="font-bold ml-4 mt-3 text-gray-500">Task Assigned <br><p class="text-black text-1xl ml-4">05</p></h3>
+            </div>
+            <div class="bg-gradient-to-r mt-3 from-[#3752FD] to-[#9BA8F8] p-4 rounded-lg  flex text-center w-98 t h-18  ">
+              <div >
+                  <img class="w-10 ml-12" src="assets/board.png" alt="">
+              </div>
+            <div class=" text-white font-bold  text-1xl ml-4">
+             <h5  id="cow" class="-mt-2"> Discover Something <br>New Today!</h5>
+          </div>
+          </div>
+          <div class="flex  w-52  m-4 rounded-xl h-17 bg-gray-100 ">
+              <img  class="w-5 ml-7 h-4 mt-7" src="assets/calender.png" alt="">
+          <h3 class="font-bold ml-8 mt-3  text-gray-500">Wed ,
+               <br><p class="text-black text-1xl ">Jul 28 2025</p></h3>
+          </div>
+        </div>
+          <div class="cards grid grid-cols-3 mt-5 gap-2  p-2">
+                <div class="bg-gray-100 w-66 rounded-xl ml-1">
+               <h4 class="bg-white w-22 pt-1 h-8  ml-4 mt-4 text-center rounded-lg font-bold text-gray-400 mb-2">ShopEase</h4>
+               <h2 class="text-1xl font-bold ml-3 mt-4">Fix Mobile Button Issue </h2>
+               <p class=" w-58  bg-white ml-4 pl-2 text-gray-400 mt-4 rounded-xl mb-3 ">Debug using Chrome <br> DevTools, check for overlappi..</p>
+                  <div class="flex mb-4">
+                     <div>
+                      <h3 class="text-gray-400 ml-2">Deadline</h3>
+                      <h3 class="font-bold ml-2"> 21 March 2025</h3>
+                     </div>
+                     <div>
+                      <button class="btn btn-primary ml-10  mt-2   w-24" >Completed</button>
+                     </div>
+                  </div>
+                </div>
+                <div class="bg-gray-100 w-66 rounded-xl ml-1">
+                  <h4 class="bg-white w-22 pt-1 h-8  ml-4 mt-4 text-center rounded-lg font-bold text-gray-400 mb-2">CloudSync</h4>
+                  <h2 class="text-1xl font-bold ml-3 mt-4">Add Dark Mode </h2>
+                  <p class=" w-58  bg-white ml-4 pl-2 text-gray-400 mt-4 rounded-xl mb-3 ">Store the users preferences in <br>localStorage, update CSS vari..</p>
+                     <div class="flex mb-4">
+                        <div>
+                         <h3 class="text-gray-400 ml-2">Deadline</h3>
+                         <h3 class="font-bold ml-2"> 21 March 2025</h3>
+                        </div>
+                        <div>
+                         <button class="btn btn-primary ml-10  mt-2   w-24" disabled >Completed</button>
+                        </div>
+                     </div>
+                   </div>
+                <div class="bg-gray-100 w-66 rounded-xl ml-1">
+                      <h4 class="bg-white w-22 pt-1 h-8  ml-4 mt-4 text-center rounded-lg font-bold text-gray-400 mb-2">SwiftPay</h4>
+                      <h2 class="text-1xl font-bold ml-3 mt-4">Optimize Home page </h2>
+                      <p class=" w-58  bg-white ml-4 pl-2 text-gray-400 mt-4 rounded-xl mb-3 ">Debug using Chrome <br> DevTools, check for overlappi..</p>
+                         <div class="flex mb-4">
+                            <div>
+                             <h3 class="text-gray-400 ml-2">Deadline</h3>
+                             <h3 class="font-bold ml-2"> 21 March 2025</h3>
+                            </div>
+                            <div>
+                             <button class="btn btn-primary ml-10  mt-2   w-24" >Completed</button>
+                            </div>
+                         </div>
+                   </div>
+                 <div class="bg-gray-100  mt-2 w-66 rounded-xl ml-1">
+                      <h4 class="bg-white  w-22 pt-1 h-8  ml-4 mt-4 text-center rounded-lg font-bold text-gray-400 mb-2">Meta</h4>
+                      <h2 class="text-1xl font-bold ml-3 mt-4">Add New Emoji </h2>
+                      <p class=" w-58  bg-white ml-4 pl-2 text-gray-400 mt-4 rounded-xl mb-3 ">Debug using Chrome <br> DevTools, check for overlappi..</p>
+                         <div class="flex mb-4">
+                            <div>
+                             <h3 class="text-gray-400 ml-2">Deadline</h3>
+                             <h3 class="font-bold ml-2"> 21 March 2025</h3>
+                            </div>
+                            <div>
+                             <button class="btn btn-primary ml-10  mt-2   w-24" >Completed</button>
+                            </div>
+                         </div>
+                   </div>
+                   <div class="bg-gray-100  mt-2 w-66 rounded-xl ml-1">
+                      <h4 class="bg-white  w-22 pt-1 h-8  ml-4 mt-4 text-center rounded-lg font-bold text-gray-400 mb-2">Google LLC</h4>
+                      <h2 class="text-1xl font-bold ml-3 mt-4"> Integrate OpenAI API </h2>
+                      <p class=" w-58  bg-white ml-4 pl-2 text-gray-400 mt-4 rounded-xl mb-3 ">Debug using Chrome <br> DevTools, check for overlappi..</p>
+                         <div class="flex mb-4">
+                            <div>
+                             <h3 class="text-gray-400 ml-2">Deadline</h3>
+                             <h3 class="font-bold ml-2"> 21 March 2025</h3>
+                            </div>
+                            <div>
+                             <button class="btn btn-primary ml-10  mt-2   w-24" >Completed</button>
+                            </div>
+                         </div>
+                   </div>
+                   <div class="bg-gray-100  mt-2 w-66 rounded-xl ml-1">
+                      <h4 class="bg-white  w-22 pt-1 h-8  ml-4 mt-4 text-center rounded-lg font-bold text-gray-400 mb-2">GlassDoor</h4>
+                      <h2 class="text-1xl font-bold ml-3 mt-4"> Improve Job searching </h2>
+                      <p class=" w-58  bg-white ml-4 pl-2 text-gray-400 mt-4 rounded-xl mb-3 ">Debug using Chrome <br> DevTools, check for overlappi..</p>
+                         <div class="flex mb-4">
+                            <div>
+                             <h3 class="text-gray-400 ml-2">Deadline</h3>
+                             <h3 class="font-bold ml-2"> 21 March 2025</h3>
+                            </div>
+                            <div>
+                             <button class="btn btn-primary ml-10  mt-2   w-24" >Completed</button>
+                            </div>
+                         </div>
+                   </div>
+              </div>
+          </div>
+        </div>
+        <div class=" bg-white w-64 ml-5  rounded-xl shadow-lg p-6 h-170 ">
+            <div class="flex ml-8 mt-1 gap-3" >
+              <img src="assets/activity.png" alt="">
+              <h2 class="font-bold   text-gray-400">Activity Log</h2>
+            </div>
+            <button class="btn btn-primary ml-11  mt-4   w-30" >Clear History</button>
+        </div>
+   </section>
+   
+     <script>
+         document.getElementById('cat').addEventListener('click',function dog(){
+            document.body.style.backgroundColor = 'purple';
+         })
+       document.getElementById('cow'),addEventListener('click',function(){
+         window.location.href="./main.html"
+       })
+        
+     </script>  
+    
+</body>
+</html>
